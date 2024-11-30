@@ -1,0 +1,66 @@
+[
+  {
+    "name": "page",
+    "path": "/",
+    "slug": false,
+    "components": [
+      {
+        "id": "0",
+        "name": "Wrapper",
+        "embedProps": {
+          "className": "mx-auto"
+        },
+        "children": [
+          {
+            "id": "1",
+            "name": "Filed",
+            "embedProps": {
+              "className": "text-2xl mx-auto",
+              "text": "hello world!"
+            }
+          },
+          {
+            "id": "2",
+            "name": "Filed",
+            "embedProps": {
+              "className": "text-4 xzzzxxl mx-auto",
+              "text": "hello world!"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "page",
+    "path": "/user",
+    "slug": false,
+    "components": [
+      {
+        "id": "3",
+        "name": "Wrapper",
+        "embedProps": {
+          "className": "mx-auto"
+        },
+        "children": [
+          {
+            "id": "4",
+            "name": "Filed",
+            "embedProps": {
+              "className": "text-2xl mx-auto",
+              "text": "hello user"
+            }
+          },
+          {
+            "id": "5",
+            "name": "Filed",
+            "embedProps": {
+              "className": "text-4 xzzzxxl mx-auto",
+              "text": "hello user bam"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

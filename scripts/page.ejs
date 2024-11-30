@@ -1,0 +1,34 @@
+<% imports.forEach(function(impt){ %>
+import <%= impt.name %> from '<%= impt.path %>'
+<% }); %>
+
+const <%name%>Page = () => { 
+  return ( 
+    <>
+      <% components.forEach(function(component){ %>
+        <% if (component.children) { %>
+            <<%= component.name %>
+            <% if (component.props) { %>
+                {...<%=component.props %>}
+            <% } %>
+            > 
+            <% component.children.forEach(function(component){ %>
+              <<%= component.name %>
+                <% if (component.props) { %>
+                    {...<%=component.props %>}
+                <% } %>
+              /> 
+            <% }); %>
+            </<%= component.name %>> 
+          <% } else { %>
+            <<%= component.name %>
+            <% if (component.props) { %>
+                {...<%=component.props %>}
+            <% } %>
+            /> 
+        <% } %>
+      <% }); %>
+    </>
+  ) 
+}
+export default <%name%>Page;

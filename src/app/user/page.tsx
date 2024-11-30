@@ -3,11 +3,11 @@ import Wrapper from '@/templates/Wrapper'
 
 import Filed from '@/templates/Filed'
 
-import Wrapper0Config from '@/embed/0.json'
+import Wrapper3Config from '@/embed/user/3.json'
 
-import Filed1Config from '@/embed/1.json'
+import Filed4Config from '@/embed/user/4.json'
 
-import Filed2Config from '@/embed/2.json'
+import Filed5Config from '@/embed/user/5.json'
 
 
 const Page = () => { 
@@ -17,19 +17,19 @@ const Page = () => {
         
             <Wrapper
             
-                {...Wrapper0Config}
+                {...Wrapper3Config}
             
             > 
             
               <Filed
                 
-                    {...Filed1Config}
+                    {...Filed4Config}
                 
               /> 
             
               <Filed
                 
-                    {...Filed2Config}
+                    {...Filed5Config}
                 
               /> 
             
